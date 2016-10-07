@@ -1,0 +1,87 @@
+<!--
+a. Los textos deben estar alineados como en la imagen.
+b. Las filas pares tienen un fondo de color gris
+c. La leyenda de la tabla tiene un estilo propio
+d. Las imágenes están incluidas en el fondo y son de tamaño 50px x 50px.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>U2 Ej 11</title>
+	<style>
+		table {
+			border: 1px solid #000;
+			text-align: center;
+			border-collapse: collapse;
+			empty-cells: hide;
+		}
+				
+				
+		tr:nth-child(even) {
+			background: #eee;
+		}
+		
+		td{ 
+			padding: 5px;
+			border: solid 1px #000;
+		}
+		
+		caption {
+			text-align: left;
+			font-style: italic;
+			caption-side: bottom;
+			font-size: 0.9em;
+		}
+		
+		.uno {
+			border-top: solid 1px #000;
+			background: #fff;
+		}
+		
+		.dos, .tres {
+			width: 80px;
+			padding-left: 40px;
+			height: 50px;
+		}
+		
+		.dos {
+			background: url(http://programandoointentandolo.com/wordpress/wp-content/uploads/2013/04/CSS3-logo.png) no-repeat left center;
+		}
+		
+		.tres {
+			background: url(http://programandoointentandolo.com/wordpress/wp-content/uploads/2013/04/HTML5-logo.png) no-repeat left center; 
+		}
+		
+		.dos:hover, .tres:hover {
+			background-color:  #FFFF66;
+		}
+    </style>
+  </head>
+  <body>
+	<table>
+		<caption>Esta es la leyenda de la tabla</caption>
+		<tr>
+			<td colspan="2">Bloques</td>
+		</tr>	
+		<tr>
+			<td>Unidad 1</td>
+			<td>Planificación de interfaces</td>
+		</tr>
+		<tr>
+			<td>Unidad 2</td>
+			<td>Uso de estilos</td>
+		</tr>
+		<tr>
+			<td class="dos">CSS</td>
+			<td>CSS2
+			<div class="uno">CSS3</div></td>
+		</tr>
+		<tr>
+			<td class="tres">HTML</td>
+			<td>HTML5</td>
+		</tr>
+	</table>
+  </body>
+</html>
