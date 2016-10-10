@@ -1,0 +1,106 @@
+<!--Autofocus
+Required
+<label>Nombre.....</label>
+<label for="texto">blabla</label>
+<input id="texto"><
+
+fieldset    legend
+
+:focus  Cuando esté la celda seleccionada
+outline:none  Cuando haya focus en un elemento hay uno por defecto
+
+<input type="text" placeholder="Introduce tu nombre..."> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>U2 Ejercicio 14</title>
+    <link rel="stylesheet" href="U2_Ej14css.css">
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Inscripción</legend>
+        <fieldset>
+          <legend>Información personal</legend>
+
+          <div><label for="nombre">Nombre*: </label>
+          <input type="text" id="nombre" autofocus="autofocus" required="required"></div>
+          </br>
+
+          <div><label for="apellido">Apellidos*: </label>
+          <input type="text" id="apellido" required="required"></div>
+          </br>
+
+          <div><label for="email">Email*: </label>
+          <input type="email" id="email" required="required"></div>
+          </br>
+
+          <div><label>Sexo:</label>
+          <label for="h">Hombre </label>
+          <input type="radio" name="gender" id="h" value="Hombre" checked>
+          <label for="m">Mujer </label>
+          <input type="radio" name="gender" id="m" value="Mujer"></div>
+          </br>
+
+          <div><label for="fecha">Fecha de nacimiento*: </label>
+          <input type="date" id="fecha"></div>
+          </br>
+
+          <div><label for="provincia">Provincia: </label>
+          <select name="provincia">
+            <option value="castellon">Castellón</option>
+            <option value="valencia">Valencia</option>
+            <option value="alicante">Alicante</option>
+          </select></div>
+          </br>
+
+          <div><label for="poblacion">Población: </label>
+          <input type="text" id="poblacion"></div>
+          </br></br>
+
+          <div><label for="telf">Teléfono: </label>
+          <input type="text" id="telf"></div>
+          </br>
+
+          <div><label>Motivo de inscripción: </label></br>
+          <textarea cols="100"></textarea></div>
+          </br>
+
+          <div><label>Escoge el color de tu avatar: </label>
+          <input type="color" id="color"></div>
+          </br>
+
+
+        </fieldset>
+        <fieldset>
+          <legend>Creación de usuario</legend>
+
+          <div><label for="usu">Nombre de usuario*: </label>
+          <input type="text" id="usu" required="required"></div>
+          </br>
+
+          <div><label for="contra">Contraseña*: </label>
+          <input type="password" id="contra" required="required"></div>
+          </br>
+
+          <div><label for="pass2">Repite contraseña*: </label>
+          <input type="password" id="pass2" required="required"></div>
+          </br>
+
+        </fieldset>
+
+          <input type="checkbox" name="Copias"> Deseo recibir copias de los mensajes del foro en mi correo electrónico.<br>
+          <input type="checkbox" name="notificaciones"> Deseo recibir notificaciones de próximos eventos en mi correo electrónico.</br></br>
+
+          <input type="button" value="Confirmar registro"></br></br>
+
+          <div class="notas">Los campos marcados con * son obligatorios.</div>
+      </fieldset>
+
+
+  </form>
+
+  </body>
+</html>
