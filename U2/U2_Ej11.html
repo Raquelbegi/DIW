@@ -17,43 +17,43 @@ d. Las imágenes están incluidas en el fondo y son de tamaño 50px x 50px.
 			border-collapse: collapse;
 			empty-cells: hide;
 		}
-				
-				
+
+
 		tr:nth-child(even) {
 			background: #eee;
 		}
-		
-		td{ 
+
+		td{
 			padding: 5px;
 			border: solid 1px #000;
 		}
-		
+
 		caption {
 			text-align: left;
 			font-style: italic;
 			caption-side: bottom;
 			font-size: 0.9em;
 		}
-		
+
 		.uno {
 			border-top: solid 1px #000;
 			background: #fff;
 		}
-		
+
 		.dos, .tres {
 			width: 80px;
 			padding-left: 40px;
 			height: 50px;
 		}
-		
+
 		.dos {
 			background: url(http://programandoointentandolo.com/wordpress/wp-content/uploads/2013/04/CSS3-logo.png) no-repeat left center;
 		}
-		
+
 		.tres {
-			background: url(http://programandoointentandolo.com/wordpress/wp-content/uploads/2013/04/HTML5-logo.png) no-repeat left center; 
+			background: url(http://programandoointentandolo.com/wordpress/wp-content/uploads/2013/04/HTML5-logo.png) no-repeat left center;
 		}
-		
+
 		.dos:hover, .tres:hover {
 			background-color:  #FFFF66;
 		}
@@ -64,7 +64,7 @@ d. Las imágenes están incluidas en el fondo y son de tamaño 50px x 50px.
 		<caption>Esta es la leyenda de la tabla</caption>
 		<tr>
 			<td colspan="2">Bloques</td>
-		</tr>	
+		</tr>
 		<tr>
 			<td>Unidad 1</td>
 			<td>Planificación de interfaces</td>
@@ -74,9 +74,11 @@ d. Las imágenes están incluidas en el fondo y son de tamaño 50px x 50px.
 			<td>Uso de estilos</td>
 		</tr>
 		<tr>
-			<td class="dos">CSS</td>
-			<td>CSS2
-			<div class="uno">CSS3</div></td>
+			<td class="dos" rowspan="2">CSS</td>
+			<td>CSS2</td>
+    </tr>
+    <tr>
+			<td>CSS3</td>
 		</tr>
 		<tr>
 			<td class="tres">HTML</td>
