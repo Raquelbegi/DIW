@@ -1,19 +1,21 @@
 div label:nth-child(1)  {
-  width: 10%;
+  width: 15%;
   float: left;
 }
 
 input, textarea {
   border-radius: 5px;
+  padding: 0.2em;
 }
 
 input:focus {
-  background: gray;
-  border: 1px solid fuchsia;
+  background: silver;
+  border: 1px solid violet;
+  outline: none;
 }
 
 textarea {
-  max-height: 40px;
+  height: 40px;
   overflow: auto;
 }
 
