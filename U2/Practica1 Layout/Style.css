@@ -1,23 +1,205 @@
+/* Quitamos paddings y margins de todo */
 *	{
 	margin: 0px;
 	padding: 0px;
  }
 
- header, section, footer, aside, nav, article, figure, figcaption,hgroup {
- 	display: block;
+/* Cabecera con imagen y texto */
+ #cabecera {
+ 	background: lightblue;
+ 	border: 1px solid lightgray;
+ 	padding: 20px;
+ 	vertical-align: middle;
+ 	width: 100%;
+ 	text-align:center;
  }
 
-body {
-	text-align: center;
-}
+ #cabecera #img {
+ 	display: inline-block;
+ 	width: 200px;
+ 	height: 50px;
+ 	vertical-align: middle;
+ }
 
-#contenedor {
-	width: 960px;
-}
+ #cabecera #texto {
+ 	display: inline-block;
+ 	margin-left: 10px;
+ 	vertical-align: middle;
+ }
 
-#cabecera {
-	width: 100%;
-	background: lightblue;
-	padding: 20px;
-	display: table;
-}
+ /* El menú del nav */
+
+ #menu {
+ 	background: #CCCCCC;
+ 	padding: 5px 15px;
+ 	text-align: left;
+ }
+
+ #menu li {
+ 	display: inline-block;
+ 	list-style: none;
+ 	padding: 5px;
+ 	font: bold 14px verdana, sans-serif;
+ }
+
+/* Primer submenú */
+ #menu li #subsub {
+   display: none;
+ }
+
+ #menu li:hover > #subsub {
+   display: block;
+   width: 120px;
+ 	position: absolute;
+ 	background: #eee;
+ }
+
+ #menu li:hover > #subsub li {
+ 	margin: 0px;
+ 	border-bottom: solid 1px #000;
+ 	width: 80%;
+ 	position: relative;
+ 	margin-bottom: 5px;
+ 	margin-left: 5px;
+ }
+
+ #menu li:hover > #subsub li a {
+ 	text-decoration: none;
+ 	font-size: 10px;
+ 	color: #000;
+ 	margin-top: -10px;
+ 	margin-bottom: -10px;
+ }
+
+ #menu li:hover > #subsub li:hover {
+ text-align: right;
+ }
+
+/* Segundo submenú */
+ #menu li #subsub ul {
+   display: none;
+ }
+
+ #subsub li:hover #sub {
+   display: block;
+   width: 120px;
+ 	position: absolute;
+ 	top: 10px;
+ 	right: -120px;
+ 	text-align: left;
+ 	background: #eee;
+ }
+
+ #subsub li:hover #sub li:hover {
+ 	text-align: right;
+ }
+
+ /* Contenedor y secciones */
+ #container {
+ 	width: 960px;
+ 	margin: 15px auto;
+ 	text-align: left;
+ }
+
+ #seccion {
+ 	float: left;
+ 	width: 660px;
+ 	margin: 20px;
+ }
+
+/* footer */
+	#pie {
+		clear: both;
+		text-align: center;
+		padding: 20px;
+		border-top: 2px solid #999999;
+	}
+
+	img{
+		width: 200px;
+		margin: 5px;
+	}
+
+	article {
+		border: 1px solid #999999;
+		padding: 20px;
+		margin-bottom: 15px;
+		background: #eee;
+	}
+
+	article footer {
+		text-align: right;
+		color: steelblue;
+		font-weight: bold;
+	}
+
+	article header{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	article hgroup {
+		margin-bottom: 10px;
+	}
+
+	time {
+		color: #999999;
+	}
+
+
+	/* Menú lateral */
+		#columna {
+			float: left;
+			width: 220px;
+			margin: 20px 0px;
+			padding: 20px;
+			background: #CCCCCC;
+		}
+
+		/* Submenú lateral */
+		blockquote ul {
+		  display: none;
+		}
+
+		blockquote:hover > ul{
+		  display: block;
+		  width: 120px;
+			position: relative;
+			left: 20px;
+		}
+
+		blockquote:hover > ul li {
+			border-bottom: solid 1px #000;
+			list-style-type: none;
+			text-align: center;
+		}
+
+		blockquote:hover {
+			padding-left: 10px;
+		}
+
+		blockquote li:hover {
+			padding-left: 20px;
+		}
+
+		blockquote:hover > ul li a {
+			text-decoration: none;
+			color: #000;
+		}
+
+		/* Fonts */
+	#cabecera h1{
+		font: bold 24px verdana, sans-serif;
+	}
+
+	article h1{
+		font: bold 20px verdana, sans-serif;
+	}
+
+	h2 {
+		font: bold 14px verdana, sans-serif;
+	}
+
+	figcaption {
+		font: italic 12px verdana, sans-serif;
+	}

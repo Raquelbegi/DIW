@@ -1,14 +1,105 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>U1 Práctica 1 Layout</title>
-    <link rel="stylesheet" href="Style.css">
-  </head>
-  <body>
-    <header id="cabecera"></header>
-    <div id="contenedor">
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Ejemplo de HTML5">
+		<meta name="keywords" content="HTML5, CSS3, JavaScript">
+		<title>Título de la web</title>
+		<link rel="stylesheet" href="Style.css">
+	</head>
+	<body>
+    <header id="cabecera">
+      <div id="img"><img src="imagen.png" style="width: 200px; height: 50px;"></img></div>
+      <div id="texto"><h1>Cabecera del sitio web</h1></div>
+    </header>
 
-    </div>
-  </body>
+    <nav id="menu">
+      <ul>
+        <li>inicio</li>
+        <li>categoría 1
+          <ul id="subsub">
+            <li><a href="#">Submenú 2.1</a>
+              <ul id="sub">
+                <li><a href="#">Submenú 2.1.1</a></li>
+                <li><a href="#">Submenú 1.1.2</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Submenú 1.2</a></li>
+          </ul>
+        </li>
+        <li>categoría 2
+          <ul id="subsub">
+            <li><a href="#">Submenú 2.1</a>
+              <ul id="sub">
+                <li><a href="#">Submenú 2.1.1</a></li>
+                <li><a href="#">Submenú 2.1.2</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Submenú 2.2</a></li>
+          </ul>
+        </li>
+        <li>contacto</li>
+      </ul>
+    </nav>
+
+		<div id="container">
+			<section id="seccion">
+				<article>
+					<header>
+						<hgroup>
+							<h1>Título de la primera entrada</h1>
+							<h2>Subtítulo de la primera entrada</h2>
+						</hgroup>
+						<time datetime="2016-10-10" pubdate>publicado 10-10-2016</time>
+					</header>
+
+				   Este es el texto de mi primera entrada
+					<figure>
+						<img src="http://bloginteligenciacolectiva.com/wp-content/uploads/2013/08/blogs-bloguers.jpg">
+						<figcaption>
+							Esta es el caption de la imagen
+						</figcaption>
+					</figure>
+
+					<footer>
+						<p>comentarios (0)</p>
+					</footer>
+				</article>
+
+				<article>
+					<header>
+						<hgroup>
+							<h1>Título de la segunda entrada</h1>
+							<h2>Subtítulo de la segunda entrada</h2>
+						</hgroup>
+						<time datetime="2016-10-10" pubdate>publicado 10-10-2016</time>
+					</header>
+						   Este es el texto de mi segunda entrada
+					<footer>
+						<p>comentarios (0)</p>
+					</footer>
+				</article>
+			</section>
+
+			<aside id="columna">
+				<blockquote>Post uno
+          <ul>
+            <li><a href="#">Submenú 1</a></li>
+            <li><a href="#">Submenú 2</a></li>
+          </ul>
+        </blockquote>
+				<blockquote>Post dos
+          <ul>
+            <li><a href="#">Submenú 1</a></li>
+            <li><a href="#">Submenú 2</a></li>
+          </ul>
+        </blockquote>
+			</aside>
+
+		</div>
+
+    <footer id="pie">
+      Derechos Reservados &copy; 2016-2020
+    </footer>
+	</body>
 </html>
