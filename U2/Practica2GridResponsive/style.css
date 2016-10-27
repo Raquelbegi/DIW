@@ -87,6 +87,10 @@ section {
   display: block;
 }
 
+.row {
+  text-align: justify;
+}
+
 /********** Dispositivos grandes **********/
 @media screen and (min-width: 992px) {
   .col-lg-1 {width: 8.33%;}
@@ -137,6 +141,9 @@ section {
     font-size: 1.3em;
   }
   .camiseta img {
+    display: none;
+  }
+  .hidden-sm {
     display: none;
   }
 }
