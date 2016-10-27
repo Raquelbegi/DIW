@@ -44,12 +44,12 @@ p {
 }
 
 /*The container include a margin between browser and the elements*/
-.container{
+/*.container {
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
-}
+}*/
 
 /*The cells incluide a margin between sections */
 .cell{
