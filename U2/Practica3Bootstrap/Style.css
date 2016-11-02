@@ -77,6 +77,10 @@ border: 1px solid black;
   color: #000;
 }
 
+.title_salmon a:hover, .title_sand a:hover, .title_red a:hover {
+  text-decoration: none;
+}
+
 .title_sand {
   background-color: #F5DA81;
 }
