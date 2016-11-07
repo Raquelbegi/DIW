@@ -8,6 +8,11 @@
   padding-top: 5px;
 }
 
+.imagen img {
+  width: 40px;
+  height: auto;
+}
+
 .menu {
   background: #2c2c2c;
   height: 50px;
