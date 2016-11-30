@@ -41,6 +41,11 @@ picture img {
   text-align: center;
 }
 
+.nosotros img {
+  width: 100px;
+  height: auto;
+}
+
 .nosotros p {
   text-align: justify;
 }
